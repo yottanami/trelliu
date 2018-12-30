@@ -12,13 +12,16 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="">
     <!--[if lt IE 9]>
-	<script src="script/html5shiv.min.js"></script>
-	<![endif]-->
-	 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"/>
-	 <link rel="stylesheet" href="assets/stylesheets/main.css" />
-	 <link rel="stylesheet" href="assets/stylesheets/parallax.css" />
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="script/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="assets/stylesheets/aos.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300"/>
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="assets/stylesheets/parallax.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </head>
   <body>
@@ -53,14 +56,39 @@
 
     <section class="panel panel3" data-section-name="fourth">
       <div class="inner">
-	<div class="vertical-center">
-	  <h2></h2>
-	  <p></p>
+	<div class="vertical-center2">
+	  <h2>Animation</h2>
+
+          <div class="aos-all">
+
+
+            <div data-id="3" class="aos-item" data-aos="zoom-out-down">Zoom out down</div>
+            <div data-id="5" class="aos-item" data-aos="flip-up">Flip Up</div>
+            <div data-id="9" class="aos-item" data-aos="slide-right"><Br>Slide Right</div>
+            <div data-id="11" class="aos-item" data-aos="slide-left"><Br>Slide Left</div>
+            <div data-id="2" class="aos-item" data-aos="fade-down">Fade down</div>
+            <div data-aos="fade-up"
+                 data-aos-anchor-placement="top-bottom" class="aos-item">
+            </div>
+          </div>
+
 	</div>
       </div>
     </section>
+    <section class="panel panel4" data-section-name="fifth">
+      <div class="inner">
+        <script src="https://calendar.time.ly/embed.js" data-src="https://calendar.time.ly/bfdzhduw/?notoolbar=1" data-max-height="0" id="timely_script" class="timely-script"></script>
+      </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
 
+       AOS.init({
+
+       });
+
+    </script>
     <script src="assets/javascripts/jquery-1.11.1.js"></script>
     <script src="assets/javascripts/jquery.scrollify.js"></script>
     <script src="assets/javascripts/main.js"></script>
